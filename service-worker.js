@@ -1,10 +1,3 @@
-/*
- * @Description: 
- * @Date: 2019-08-20 15:53:37
- * @Author: zhengshaowen
- * @LastEditors: zhengshaowen
- * @LastEditTime: 2019-08-20 15:54:10
- */
 /**
  * Welcome to your Workbox-powered service worker!
  *
@@ -18,19 +11,27 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
+importScripts("workbox-v3.6.3/workbox-sw.js");
+workbox.setConfig({modulePathPrefix: "workbox-v3.6.3"});
 
 importScripts(
-  "precache-manifest.e10dc64f02452c11a21e0ebf3b1b5102.js"
+  "precache-manifest.0e41d3327ea45a5d1f8afa181e4c8d43.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "hello"});
+
+workbox.skipWaiting();
 
 /**
  * The workboxSW.precacheAndRoute() method efficiently caches and responds to
  * requests for URLs in the manifest.
  * See https://goo.gl/S9QRab
  */
-self.__precacheManifest = [].concat(self.__precacheManifest || []);
+self.__precacheManifest = [
+  {
+    "url": "./index.html",
+    "revision": 1566291593980
+  }
+].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
