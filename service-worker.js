@@ -1,3 +1,10 @@
+/*
+ * @Description: 
+ * @Date: 2019-08-20 15:53:37
+ * @Author: zhengshaowen
+ * @LastEditors: zhengshaowen
+ * @LastEditTime: 2019-08-20 15:54:10
+ */
 /**
  * Welcome to your Workbox-powered service worker!
  *
@@ -14,7 +21,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "test-pwa/precache-manifest.82b99612b9278c08e73105f6de2c8a8d.js"
+  "precache-manifest.e10dc64f02452c11a21e0ebf3b1b5102.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "hello"});
