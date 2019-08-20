@@ -1,6 +1,13 @@
+/*
+ * @Description: e
+ * @Date: 2019-08-20 17:08:49
+ * @Author: zhengshaowen
+ * @LastEditors: zhengshaowen
+ * @LastEditTime: 2019-08-20 17:09:39
+ */
 /**
  * Welcome to your Workbox-powered service worker!
- *
+ *lll
  * You'll need to register this file in your web app and you should
  * disable HTTP caching for this file too.
  * See https://goo.gl/nhQhGp
@@ -15,7 +22,7 @@ importScripts("workbox-v3.6.3/workbox-sw.js");
 workbox.setConfig({modulePathPrefix: "workbox-v3.6.3"});
 
 importScripts(
-  "precache-manifest.0e41d3327ea45a5d1f8afa181e4c8d43.js"
+  "precache-manifest.b7eb4cfd0e0e8d3f2bd28cb1324e8b39.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "hello"});
@@ -30,7 +37,7 @@ workbox.skipWaiting();
 self.__precacheManifest = [
   {
     "url": "./index.html",
-    "revision": 1566291593980
+    "revision": 1566292129398
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
