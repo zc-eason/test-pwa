@@ -1,10 +1,3 @@
-/*
- * @Description: 
- * @Date: 2019-08-21 10:44:15
- * @Author: zhengshaowen
- * @LastEditors: zhengshaowen
- * @LastEditTime: 2019-08-21 10:44:52
- */
 /**
  * Welcome to your Workbox-powered service worker!
  *
@@ -18,11 +11,11 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("./workbox-v3.6.3/workbox-sw.js");
-workbox.setConfig({modulePathPrefix: "./workbox-v3.6.3"});
+importScripts("workbox-v3.6.3/workbox-sw.js");
+workbox.setConfig({modulePathPrefix: "workbox-v3.6.3"});
 
 importScripts(
-  "./precache-manifest.9056b4cc0daf63d6c371b866b3d8139b.js"
+  "precache-manifest.4181464834a1ec891f27183cf770339b.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "hello"});
@@ -37,8 +30,8 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "../index.html",
-    "revision": 1566355455210
+    "url": "./index.html",
+    "revision": 1566355637423
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();

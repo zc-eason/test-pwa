@@ -3,12 +3,12 @@
  * @Date: 2019-08-20 14:54:36
  * @Author: zhengshaowen
  * @LastEditors: zhengshaowen
- * @LastEditTime: 2019-08-21 10:44:00
+ * @LastEditTime: 2019-08-21 10:47:02
  */
 /* eslint-disable*/
 module.exports = {
   productionSourceMap: false,
-  publicPath: "./dist",
+  publicPath: "./",
   assetsDir: "static",
   pwa: {
     // configure the workbox plugin
