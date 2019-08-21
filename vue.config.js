@@ -3,18 +3,19 @@
  * @Date: 2019-08-20 14:54:36
  * @Author: zhengshaowen
  * @LastEditors: zhengshaowen
- * @LastEditTime: 2019-08-20 16:58:11
+ * @LastEditTime: 2019-08-21 10:27:45
  */
 /* eslint-disable*/
 module.exports = {
   productionSourceMap: false,
-  publicPath: "./",
+  publicPath: "./dist",
   assetsDir: "static",
   pwa: {
     // configure the workbox plugin
     workboxPluginMode: 'GenerateSW',
     workboxOptions: {
-      skipWaiting: true,
+      skipWaiting: true, // sw更新后会进入waiting状态, 跳过等待
+      clientsClaim: true, // sw更新后会进入waiting状态, 跳过等待
       globDirectory: 'dist',
       globPatterns: ['**/*.{js,png,jpg,gif,ico,html,css,eot,svg,ttf,json}'],
       exclude: [/\.html$/],
