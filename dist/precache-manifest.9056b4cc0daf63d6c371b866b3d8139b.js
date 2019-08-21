@@ -28,16 +28,16 @@ self.__precacheManifest = [
     "url": "dist/img/icons/favicon-16x16.png"
   },
   {
-    "revision": "0ff1bc4d14e5c9abcacba7c600d97814",
-    "url": "dist/img/icons/android-chrome-512x512.png"
+    "revision": "936d6e411cabd71f0e627011c3f18fe2",
+    "url": "dist/img/icons/apple-touch-icon-120x120.png"
   },
   {
     "revision": "1a034e64d80905128113e5272a5ab95e",
     "url": "dist/img/icons/apple-touch-icon-152x152.png"
   },
   {
-    "revision": "af28d69d59284dd202aa55e57227b11b",
-    "url": "dist/img/icons/apple-touch-icon-76x76.png"
+    "revision": "9a2b5c0f19de617685b7b5b42464e7db",
+    "url": "dist/img/icons/apple-touch-icon-60x60.png"
   },
   {
     "revision": "2b9800b131041b30bef8",
@@ -48,32 +48,32 @@ self.__precacheManifest = [
     "url": "dist/img/icons/apple-touch-icon.png"
   },
   {
-    "revision": "936d6e411cabd71f0e627011c3f18fe2",
-    "url": "dist/img/icons/apple-touch-icon-120x120.png"
+    "revision": "f22d501a35a87d9f21701cb031f6ea17",
+    "url": "dist/img/icons/safari-pinned-tab.svg"
   },
   {
-    "revision": "9a2b5c0f19de617685b7b5b42464e7db",
-    "url": "dist/img/icons/apple-touch-icon-60x60.png"
+    "revision": "af28d69d59284dd202aa55e57227b11b",
+    "url": "dist/img/icons/apple-touch-icon-76x76.png"
   },
   {
     "revision": "98b614336d9a12cb3f7bedb001da6fca",
     "url": "dist/img/icons/favicon-32x32.png"
   },
   {
-    "revision": "058a3335d15a3eb84e7ae3707ba09620",
-    "url": "dist/img/icons/mstile-150x150.png"
+    "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
+    "url": "dist/robots.txt"
   },
   {
     "revision": "48462383135dbdae2a72161a266fcaa8",
     "url": "dist/manifest.json"
   },
   {
-    "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
-    "url": "dist/robots.txt"
+    "revision": "058a3335d15a3eb84e7ae3707ba09620",
+    "url": "dist/img/icons/mstile-150x150.png"
   },
   {
-    "revision": "f22d501a35a87d9f21701cb031f6ea17",
-    "url": "dist/img/icons/safari-pinned-tab.svg"
+    "revision": "0ff1bc4d14e5c9abcacba7c600d97814",
+    "url": "dist/img/icons/android-chrome-512x512.png"
   },
   {
     "revision": "f130a0b70e386170cf6f011c0ca8c4f4",
