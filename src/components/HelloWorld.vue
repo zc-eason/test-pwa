@@ -1,5 +1,13 @@
+<!--
+ * @Description:
+ * @Date: 2019-08-20 14:50:42
+ * @Author: zhengshaowen
+ * @LastEditors: zhengshaowen
+ * @LastEditTime: 2019-08-21 11:09:49
+ -->
 <template>
   <div class="hello">
+    <div>{{ api }}</div>
     <h1>{{ msg }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
@@ -34,10 +42,19 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator'
+import {httpInterface} from 'ad-utils';
 
 @Component
 export default class HelloWorld extends Vue {
   @Prop() private msg!: string;
+  api: any = '333'
+  
+  mounted() {
+    const request = new httpInterface().getHttp();
+    request.get({url: 'https://api.github.com'}).then(res => {
+      this.api = res;
+    })
+  }
 }
 </script>
 
