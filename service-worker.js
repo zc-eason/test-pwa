@@ -15,7 +15,7 @@ importScripts("workbox-v3.6.3/workbox-sw.js");
 workbox.setConfig({modulePathPrefix: "workbox-v3.6.3"});
 
 importScripts(
-  "precache-manifest.4181464834a1ec891f27183cf770339b.js"
+  "precache-manifest.ed9d174d8205941c9342b70ce8c231d2.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "hello"});
@@ -31,7 +31,7 @@ workbox.clientsClaim();
 self.__precacheManifest = [
   {
     "url": "./index.html",
-    "revision": 1566355637423
+    "revision": 1566357407216
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();

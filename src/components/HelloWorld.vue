@@ -3,7 +3,7 @@
  * @Date: 2019-08-20 14:50:42
  * @Author: zhengshaowen
  * @LastEditors: zhengshaowen
- * @LastEditTime: 2019-08-21 11:09:49
+ * @LastEditTime: 2019-08-21 11:13:52
  -->
 <template>
   <div class="hello">
@@ -42,17 +42,17 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator'
-import {httpInterface} from 'ad-utils';
+import { httpInterface as HttpInterface } from 'ad-utils'
 
 @Component
 export default class HelloWorld extends Vue {
   @Prop() private msg!: string;
   api: any = '333'
-  
-  mounted() {
-    const request = new httpInterface().getHttp();
-    request.get({url: 'https://api.github.com'}).then(res => {
-      this.api = res;
+
+  mounted () {
+    const request = new HttpInterface().getHttp()
+    request.get({ url: 'https://api.github.com' }).then((res: any) => {
+      this.api = res
     })
   }
 }
